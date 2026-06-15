@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Valentine's Special</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts-bg" id="heartsBg"></div>
+
+<div class="card" id="container">
+    <p class="eyebrow">💌 a message for you</p>
+    <h1 class="header-text">Will you be my Valentine?</h1>
+
+    <div class="gif-wrap" id="gifWrap">
+        <!-- Re-added 'gif/' to the paths to fix the broken images! -->
+        <img id="waitingGif" src="gif/hi.gif"    alt="Waiting">
+        <img id="sadGif"     src="gif/sad.gif"   alt="Sad"   style="display:none;">
+        <img id="happyGif"   src="gif/happy.gif" alt="Happy" style="display:none;">
+    </div>
+
+    <div id="message"></div>
+
+    <div class="buttons">
+        <button class="btn btn-yes" id="yesBtn" onclick="showLove()">Yes! 💕</button>
+        <button class="btn btn-no"  id="noBtn"  onclick="moveNo()">No</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
